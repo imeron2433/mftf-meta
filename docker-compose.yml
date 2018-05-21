@@ -1,8 +1,10 @@
 version: '3.0'
 services:
-  meta-test:
+  mftf-meta:
     build: .
+    image: mftf/meta
     ports:
      - "8080:80"
     volumes:
      - ${MAGENTO_BASE_PATH}:/var/magento
+    container_name: mftf_meta_master

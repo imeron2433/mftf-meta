@@ -7,7 +7,7 @@ if [ -z "$1" ]
       exit 1
 fi
 
-if [ ! -d "app/vendor" ]
+if [ ! -d "app/vendor" ] && [[ "$(docker images -q mftf/meta 2> /dev/null)" == "" ]]
    then
       echo "You must first run composer install from the 'app' dir in order to build the project from scratch"
       exit 1
