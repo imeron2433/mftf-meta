@@ -1,0 +1,22 @@
+{
+  "name": "magento/mftf-meta",
+  "description": "Magento 2 (Open Source)",
+  "type": "project",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:magento/magento2-functional-testing-framework.git"
+    }
+  ],
+  "require-dev": {
+    "magento/magento2-functional-testing-framework": "dev-MQE-987"
+  }
+}
